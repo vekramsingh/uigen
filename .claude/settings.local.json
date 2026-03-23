@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(npm install:*)",
+      "Bash(npx vitest:*)",
+      "Bash(grep -r \"from ''ai''\" src/ --include=\"*.ts\" --include=\"*.tsx\" -l)",
+      "Bash(npm show:*)",
+      "Bash(node -e \"const p = require\\(''''./package.json''''\\); console.log\\(''''zod:'''', p.dependencies.zod || p.devDependencies.zod\\)\")",
+      "Bash(npm ls:*)",
+      "Bash(node -e \"const p = require\\(''./package.json''\\); const deps = {...p.dependencies, ...p.devDependencies}; Object.keys\\(deps\\).filter\\(k=>k.startsWith\\(''@ai-sdk''\\)||k===''ai''\\).forEach\\(k=>console.log\\(k+'':'', deps[k]\\)\\)\")",
+      "Bash(npm pack:*)",
+      "Bash(npx --yes jsr list)",
+      "Bash(cd /tmp)",
+      "Bash(tar -tf ai-5.0.157.tgz)",
+      "Bash(tar -xf ai-5.0.157.tgz package/dist/index.d.ts)",
+      "Read(//tmp/package/dist/**)",
+      "Bash(npm audit:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "Bash(start:*)",
+      "mcp__playwright__browser_type",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_press_key",
+      "mcp__playwright__browser_console_messages"
+    ]
+  }
+}
